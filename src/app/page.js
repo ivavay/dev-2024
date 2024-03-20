@@ -8,7 +8,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LogoDevIcon from '@mui/icons-material/LogoDev';
 import { Button } from '@mui/material';
-import Link from 'next/link';
+import { Analytics } from "@vercel/analytics/react"
 
 
 export default function Home() {
@@ -30,6 +30,7 @@ export default function Home() {
         <ProjectCard  src={Chengyu} title="Chengyu" blurb="Chrome extension to learn Chinese idioms" tag1="Jasvascript" tag2="JSON" repo="https://github.com/ivavay/chengyu-extension" demo="https://chromewebstore.google.com/detail/chengyu/hgedahiaddaonjomddplfchiiemhifkn?hl=zh-TW"/>
       </div>
       <footer>©2024 Ivy Chen, built with Next.js</footer>
+      <Analytics />
     </div>
   );
 }
