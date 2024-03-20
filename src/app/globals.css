@@ -15,15 +15,95 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+.tags {
+  display: flex;
+  padding: 16px 8px;
+}
+.tag {
+  background-color: rgb(46, 108, 224);
+  border-radius: 5px;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 8px;
+  margin: 0 4px;
+}
+.card {
+  padding: 8px 0;
+  background-color: rgb(207, 243, 254);
+  border-radius: 10px;
+  height: 480px;
+}
+.links {
+  padding: 16px 8px 0 8px;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 42px;
+  font-weight: 500;
+  padding: 180px 96px 80px 96px;
+  color: rgb(27, 34, 119);
+}
+img {
+  height: 250px;
+  object-fit: cover;
+}
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px 16px 8px 16px;
+}
+.grid {
+  padding: 40px 96px;
+}
+@media only screen and (max-width: 600px) { 
+  .grid {
+    padding: 40px 24px;
+  }
+  h1 {
+    font-size: 24px;
+    padding: 80px 24px;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+}
+.section {
+  height: 120px;
+}
+p {
+  padding: 0 16px 16px 16px;
+}
+header {
+  margin: 8px;
+  padding: 16px 0 100px 0;
+}
+.socials {
+  padding: 0 0 0 96px ;
+}
+button {
+  pointer-events: none;
+}
+svg {
+  transform: scale(1.5);
+  margin: 0 16px 0 0;
+  color: rgb(27, 34, 119) ;
+}
+footer {
+  font-size: 16px;
+  padding: 24px 96px;
+}
+span {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 700;
+  padding: 0 8px;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(27, 34, 119);
+  background-color: rgb(255, 255, 255);
 }
 
 @layer utilities {
